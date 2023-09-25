@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="IMG/P.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="IMG/M.png" type="image/png">
+            <img src="IMG/G.png" alt="Imagem Flexivivel">
+        </picture>
+    <h1>Reproduzindo Áudios</h1>
+        <p>Vamos aprender a colocar arquivos de audio nos sites, usando HTML 5</p>
+        <audio preload="metadata" controls loop autoplay>
+            <source src="Songs/Subway Dreams - Dan Henig.mp3" type="audio/mpeg">
+            <source src="Songs/Subway Dreams - Dan Henig.ogg" type="audio/ogg">
+            <source src="Songs/Subway Dreams - Dan Henig.wav" type="audio/wav">
+            <p>Infelizmente o seu navegaor não é comptatível com o Audio <a href="Songs/Subway Dreams - Dan Henig.mp3" Clique aqui para baixar o arquivo em MP3></a></p>
+        </audio>
+</body>
+</html>

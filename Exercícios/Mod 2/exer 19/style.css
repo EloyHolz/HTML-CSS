@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+Tudo que em HTML é id = em CSS é #
+    Dentro de um Doc HTML, apenas pode haver 1 id de mesma classificação
+Tudo que em HTML é class = em CSS é .
+    Aplicado para quando quer dar a mesma configração para + de um elemento
+O nome delas deve ser baseado na funcionalidade da Identificação ou da classe e não da forma que ela gera
+*/
+
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f
+}
+
+h2{
+    color: #3c805e;
+}
+
+h1#principal{
+    text-align: center;
+    color:white;
+    background-color: #3c805e;
+}
+
+.basico{
+    color: #3c805e;
+}
+
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
