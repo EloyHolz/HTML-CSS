@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td{
+            text-align: center;
+        }
+        tr.destaque{
+            background-color: darkblue;
+            color: white;
+        }
+        col.csexo{
+            background-color: aquamarine;
+        }
+        col.cgrupo{
+            background-color: rgb(195, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tbody>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Atriz</td>
+            </tr>
+            <tr>
+                <td>Antonio</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Boxeador</td>
+            </tr>
+            <tr class="destaque">
+                <td>Leonardo</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Ninja</td>
+            </tr>
+            <tr>
+                <td>Aprill</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Donatelo</td>
+                <td>M</td>
+                <td>17</td>
+                <td>hacker</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
