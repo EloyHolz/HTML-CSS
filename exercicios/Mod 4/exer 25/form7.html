@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags alem do Input</title>
+    <style>
+        *{
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
     <h1>Novas tags úteis</h1>
     <form action="cadastro.php" method="get">
         <div>
             <label for="iest">Estado</label>
-            <select name="estado" id="iest"></select>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="SP">São Paulo</option>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
                 <option value="BA">Bahia</option>
                 <option value="FOR">Fortaleza</option>
                 <option value="AC">Acre</option>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissões: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option> Administrador</option>
+                <option> Advogado</option>
+                <option> Marketing</option>
+                <option> Engenheiro</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </div>
         <div>
             <input type="submit" value="Enviar">
