@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site Responsivo</h1>
         <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">
@@ -39,6 +40,9 @@
         </article>
     </main>
     <script>
+
+        function
+
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
