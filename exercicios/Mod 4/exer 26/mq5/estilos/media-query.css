@@ -15,4 +15,8 @@
     menu > ul > li > a{
         border-radius: 30px;
     }
+
+    main {
+        width: 768px;
+    }
 }
